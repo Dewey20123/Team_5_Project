@@ -10,8 +10,11 @@ pt = property_tax = float(input()) #dependent on location
 
 n = loan_term = int(input()) #desired loan term
 
-p = mortgage_principal = (price_of_property - down_payment)
+p = mortgage_principal = (price_of_property - down_payment)  #m = p * (i * (1 + i)**n) / ((1 + i)**n - 1)  # I Think the code might need to be phased like this.
 
 m = monthly_mortgage = p( (i(1+i)**n) / ((1+i)**(n-1)) )
 
+h = hoa = float(input("Enter monthly HOA fees: "))
+
+ins = float(input("Enter estimated monthly insurance: "))
 
